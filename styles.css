@@ -1,0 +1,92 @@
+        /* Estilos generales */
+        
+        body {
+            background-color: #000;
+            color: #00FF00;
+            font-family: Consolas, monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        /* Contenedor de la "ventana" */
+        
+        .window {
+            width: 800px;
+            height: 500px;
+            border: 2px solid #333;
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+        }
+        /* Barra superior de la ventana */
+        
+        .title-bar {
+            background-color: #202020;
+            color: white;
+            padding: 5px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+        /* Contenedor de los botones de control */
+        
+        .window-controls {
+            display: flex;
+            gap: 5px;
+        }
+        /* Botones de minimizar, maximizar y cerrar */
+        
+        .control-button {
+            width: 16px;
+            height: 16px;
+            text-align: center;
+            line-height: 16px;
+            font-weight: bold;
+        }
+        
+        .minimize {
+            background-color: #cccccc00;
+            color: rgb(255, 255, 255);
+        }
+        
+        .maximize {
+            background-color: #cccccc00;
+            color: rgb(255, 255, 255);
+        }
+        
+        .close {
+            background-color: rgba(255, 0, 0, 0);
+            color: rgb(255, 0, 0);
+        }
+        /* Estilos del área de consola */
+        
+        #console {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 10px;
+        }
+        /* Línea de entrada */
+        
+        #inputLine {
+            display: flex;
+            align-items: center;
+            padding: 5px;
+        }
+        
+        #prompt {
+            margin-right: 5px;
+        }
+        
+        input {
+            background: none;
+            border: none;
+            color: #00FF00;
+            outline: none;
+            font-family: inherit;
+            font-size: 1em;
+            flex: 1;
+        }
